@@ -2,15 +2,15 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
+import don from '../assets/tg/DONUT.png'
 export const Projects = () => {
   return (
     <section className=" border-b  py-10 w-full">
-      <h2 className="text-2xl font-bold">Projects</h2>
+      <h2 className="text-2xl font-medium">Projects</h2>
 
-      <div className="mt-4">
-        <h3 className="font-medium">Telegram Scrapper </h3>
-        <p className="text-xs font-light">2023 - 2024</p>
+      <div className="mt-8">
+        <h3 className="font-light text-xl">Telegram Scrapper </h3>
+        <p className="text-sm font-light">2023 - 2024</p>
         <p className="text-sm  font-medium mt-2">Fullstack developer</p>
         <p className="mt-2 text-sm font-light">
           Developed simple tool for extracting Users information and messages
@@ -22,6 +22,8 @@ export const Projects = () => {
         </p>
       </div>
 
+
+      <div className="flex flex-col md:flex-row gap-2 mt-4">
       <div className="text-sm font-light mt-2">
         <p>Easy as one-two-three flow:</p>
         <ul>
@@ -51,6 +53,10 @@ export const Projects = () => {
           </li>
         </ul>
       </div>
+      <Image src={don} width={420} height={236}  alt="tgcli" className="rounded-lg shadow-lg" />
+
+      </div>
+     
 
       <div className="mt-4 flex gap-2 items-center">
         <Link href="https://github.com/hypnosisflow/tgcli" target="_blank">
@@ -60,6 +66,8 @@ export const Projects = () => {
           </span>
         </Link>
       </div>
+
+
     </section>
   );
 };
