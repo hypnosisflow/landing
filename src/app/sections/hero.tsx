@@ -1,29 +1,27 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+
+
+import git from "../assets/github.svg";
+
 
 export const Hero = () => {
   return (
     <section className="w-full border-b pb-10">
-      <div>
-        <span className="text-4xl font-thin">Artem Polozov</span>
-        <h1 className="font-medium text-2xl">Frontend developer</h1>
+      <div className="flex flex-col ">
+        <span className="text-4xl font-medium">Artem Polozov</span>
+        <h1 className="text font-medium  ">Frontend developer</h1>
       </div>
 
-      <p className=" text-sm font-light mt-4">
+      <p className="mt-4 text-gray-400 text-sm">
         Studing web developement since 2022. <br />
         Driven by desire to make digital experience fluid, secured and
         beautiful. <br />
 
       </p>
 
-      <div className="mt-4 flex gap-2 items-center ">
-        <span className=" font-light text-sm">
-          Checkout my CV <span>&#8594;</span>
-        </span>
-        <Link href="/docs/CV.pdf" target="_blank">EN</Link>
-        <Link href="/docs/Resume.pdf" target="_blank">RU</Link>
   
-      </div>
 
       {/* <Image /> */}
     </section>

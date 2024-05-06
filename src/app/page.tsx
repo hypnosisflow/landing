@@ -14,9 +14,7 @@ export default function Home() {
         <nav>
           <ul>
             <li>
-              <Link href="https://github.com/hypnosisflow" target="_blank">
-                <Image src={git} width={24} height={24} alt={"github icon"} />
-              </Link>
+         
             </li>
           </ul>
         </nav>
